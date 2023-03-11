@@ -1,8 +1,23 @@
 {
-  "name": "website",
-  "version": "0.1.0",
+  "name": "@trace/website",
+  "version": "0.0.1",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gpproton/trace-website.git"
+  },
+  "keywords": [
+    "gps",
+    "track"
+  ],
+  "author": "radioActive DROID <me@godwin.dev>",
+  "license": "AGPL",
+  "bugs": {
+    "url": "https://github.com/gpproton/trace-website/issues"
+  },
+  "homepage": "https://trace.ng",
   "scripts": {
+    "setup": "pnpm run rimraf node_modules && pnpm install",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -18,5 +33,11 @@
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "typescript": "4.9.5"
+  },
+  "engines": {
+    "node": "^18 || ^16 || ^14",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1",
+    "pnpm": ">=3"
   }
 }
